@@ -10,6 +10,7 @@ find_package(catkin REQUIRED COMPONENTS
   geometry_msgs
   sensor_msgs
   message_generation
+  actionlib
 )
 
 add_message_files(
@@ -17,7 +18,7 @@ add_message_files(
 
 add_action_files(
   DIRECTORY action
-  FILES action_test.action
+  FILES msg_template.action
 )
 
 generate_messages(
@@ -36,3 +37,20 @@ include_directories(
   include
   ${catkin_INCLUDE_DIRS}
 )
+
+add_executable(actionserver_template
+  src/actionserver_template.cpp
+)
+
+target_link_libraries(actionserver_template
+  ${catkin_LIBRARIES}
+)
+
+add_executable(actionclient_template
+  src/actionclient_template.cpp
+)
+
+target_link_libraries(actionclient_template
+  ${catkin_LIBRARIES}
+)
+

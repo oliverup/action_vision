@@ -1,8 +1,8 @@
 #goal definition
-int32 goal
+string goal
 ---
 #result definition
-int32[] result
+string result
 ---
 #feedback
-int32[] feedback
+string[] feedback
