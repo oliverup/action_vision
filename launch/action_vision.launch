@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
 <launch>
-    <node pkg="action_vision" name="actionserver_template" type="actionserver_template"/>
-    <node pkg="action_vision" name="actionclient_template" type="actionclient_template"/>
+    <node pkg="action_vision" name="template_ASRV" type="template_ASRV"/>
+    <node pkg="action_vision" name="template_ACL" type="template_ACL"/>
 </launch>

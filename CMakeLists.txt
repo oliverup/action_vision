@@ -38,19 +38,20 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
-add_executable(actionserver_template
-  src/actionserver_template.cpp
+add_executable(template_ASRV
+  src/templates/template_ASRV.cpp
+  include/templates/template_ASRV.h
 )
 
-target_link_libraries(actionserver_template
+target_link_libraries(template_ASRV
   ${catkin_LIBRARIES}
 )
 
-add_executable(actionclient_template
-  src/actionclient_template.cpp
+add_executable(template_ACL
+  src/templates/template_ACL.cpp
 )
 
-target_link_libraries(actionclient_template
+target_link_libraries(template_ACL
   ${catkin_LIBRARIES}
 )
 
