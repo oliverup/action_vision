@@ -1,9 +1,8 @@
 <?xml version="1.0"?>
 <package>
-  <name>action_vision</name>
+  <name>msgs_and_action</name>
   <version>0.1.0</version>
-  <description>"Error(s) in package '/home/kinetic/catkin_ws/src/box_bot/package.xml':
-Package description must not be empty" there you go.</description>
+  <description>all vision messages and actions stored in one dir</description>
 
   <maintainer email="my_name@todo.todo">My Name</maintainer>
   <license>TODO</license>

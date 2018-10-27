@@ -7,7 +7,7 @@
 int main (int argc, char** argv) {
     ros::init(argc, argv, "test_actionserver");
     
-    actionlib::SimpleActionClient<action_vision::msg_templateAction> ac("action_vision", true);
+    actionlib::SimpleActionClient<action_vision::msg_templateAction> ac("observerAction", true);
     
     ROS_INFO("Waiting for action server to start.");
     ac.waitForServer();
