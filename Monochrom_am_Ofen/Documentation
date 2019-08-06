@@ -1,0 +1,25 @@
+SOFTWARE MONOCHROM
+
+Setup:
+1. Monochrom_am_Ofen muss in den gleichen Order verschoben werden in dem Vimba liegt.
+2. Monochrom_am_Ofen Bauen. Dazu in einem Terminal zu Monochrom_am_Ofen/Build/Make navigieren und "make" ausführen.
+3. - Windows: in der Monochrom_am_Ofen/Monochrom_am_Ofen.bat den vollen Pfad eintragen und speichern.
+   - Linux: in der Monochrom_am_Ofen/Monochrom_am_Ofen.sh den vollen Pfad eintragen und speichern.
+4. - Windows: Monochrom_am_Ofen/Monochrom_am_Ofen.bat ausführen.
+   - Linux: Monochrom_am_Ofen/Monochrom_am_Ofen.sh ausführen.
+
+
+Source:
+find_ROI.cpp beinhaltet ein paar einfache Funktionen zum;
+     -Kamera finden (getCamera)
+     -Parameter Laden und anwenden (setFeatures)
+     -Bild aufnehmen und speichern (getAnImage)
+     -Bild verarbeiten und ROI finden (processImage)
+
+In main.cpp wird zuerst eine Kamera gefunden und im Anschluss bis das Programm beendet wird Bilder aufgenommen und verarbeitet.
+
+
+Config:
+In Camera_Features.yaml können alle Kamera Paramerter Manuell umgeschrieben werden und im Anschluss durch einfaches Neustarten des Programms genutzt werden.
+Der Parameter "testing" kann zu true gesetzt werden um auch die Test_Params zu nutzen. Zu false um normal einzelne Bilder aufzunehmen.
+Dort können mehrere Bilder mit verschiedenen Exposuretimes aufgenommen werden. Es werden unteres und oberes limit gesetzt und wie viele Bilder über den Bereich Aufgenommen werden sollen.

@@ -1,0 +1,5 @@
+---
+images_for_exposure_test: 50 #50
+lower_exposure_limit: 100 #microseconds
+upper_exposure_limit: 100000 #microseconds
+...

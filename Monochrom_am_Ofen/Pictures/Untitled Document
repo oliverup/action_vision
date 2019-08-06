@@ -1,0 +1,6 @@
+
+the walls are darker?
+  ---> threshold and morph away the holes in the oxidschicht --> get contours of schmelzbad --> apply on fresh img --> threshold again and count dark parts
+
+ maybe make a function that goes over a bunch of thresholds and counts each one for dark parts. and then it lays a function over that. now we can see how it moves and it should have more extreme jumps over the parts where the threshold begins to include the dark parts.. this way we choose it right before the part with extreme jumps and get the best threshold. and make it independent of light fluctuations due to heat and stuff.
+
